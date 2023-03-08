@@ -25,7 +25,24 @@
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{tabularray}
+\usepackage{enumitem}
+\usepackage{array, booktabs, longtable}
+\newcolumntype{x}[1]{>{\raggedright}p{#1}}
 
+% \usepackage{etoolbox}
+% \AtBeginEnvironment{longtable}{%
+%     \setlist[itemize]{nosep,     % <-- new list setup
+%                       topsep     = 0pt       ,
+%                       partopsep  = 0pt       ,
+%                       leftmargin = *         ,
+%                       label      = $\bullet$ ,
+%                       before     = \vspace{-\baselineskip},
+%                       after      = \vspace{-0.5\baselineskip}
+%                         }
+%                            }% end of AtBeginEnvironment
 
 %------------------
 %------------------
@@ -88,16 +105,9 @@
 2020-Present  & \textbf{Demonstrator} \\&\textbf{Faculty of Computers and Information, Menoufia university}.\\& Teaching Deep Learning, Computer Vision Courses and Speech recognition.
 \\
 \end{tabular}
-%%END TABLE
 
-%------------------
-%	SCIENTIFIC EDUCATION
-%------------------
-% \section{\textbf{\textsc{Frameworks \& Technical Skills}}}
 \section{\textbf{Frameworks \& Technical Skills}}
 
-
-%%BEGIN TABLE
 \begin{tabular}{rl}	
     \textbf{Languages}:& Python, NodeJS, GoLang(learning)\\
     \textbf{Programming Paradigms}:&  Object-oriented programming (OOP) and Functional Programming (FP).\\
@@ -115,18 +125,25 @@
 \end{tabular}
 %%END TABLE
 
-
+ 
 \section{\textbf{Project Experience}}  
 
-\begin{small}
-    \begin{tabular}{r p{16cm}}
+% \begin{small}
+    % \begin{table}[h]
+    \begin{longtable}{r p{16cm}}
         2023  & \textbf{Personal Blog Site}, [\href{https://github.com/zaky-fetoh/Personal-Blog-Site}{Link}].\\&
         This is a MERN stack project that manage personal blog and store it in MONGODB database. It performs caching for quary using redus. It's frontend is build using ReactJS and it state is managed using Redux-toolkit.
         \begin{itemize}
             \item \textit{built with: } NodeJS, ExpressJS,  ReactJS, Crypto, Redis, MongoDB, Docker-Compose, Redux-toolkit, formik, and yup.
         \end{itemize}\\
 
+        2022  & \textbf{Clinic Management System}, [\href{https://github.com/zaky-fetoh/Clinic-Management-System}{Link}].\\&
+        A backend System for managing clinics, it's department, medical stuff, and patients. This 	System provides a RESTfull, and GraphQL for clients. Complex mongodb aggregation pipeline 	is implemented for extracting high level info.
+        \begin{itemize}
+            \item \textit{built with: } NodeJS, Express, Mongoose, graphql, and Joi. 
+        \end{itemize}\\
 
+        
         2022  & \textbf{Image Manager}, [\href{https://github.com/zaky-fetoh/image-maneger-microservices-app}{Link}].  \\& Microservices application for image storage, stored in plain form or encrypted form, with it's meta data and automatic tagging using Deep learning techniques. \\&
         It consists of three microservices as follow:\\&
         \begin{itemize}
@@ -150,16 +167,11 @@
             \end{itemize}
         \end{itemize}\\
 
-        2022  & \textbf{Clinic Management System}, [\href{https://github.com/zaky-fetoh/Clinic-Management-System}{Link}].\\&
-        A backend System for managing clinics, it's department, medical stuff, and patients. This 	System provides a RESTfull, and GraphQL for clients. Complex mongodb aggregation pipeline 	is implemented for extracting high level info.
-        \begin{itemize}
-            \item \textit{built with: } NodeJS, Express, Mongoose, graphql, and Joi. 
-        \end{itemize}\\
         2022  & \textbf{Notification Server}, [\href{https://github.com/zaky-fetoh/Learning-Backend-Development-Using-NodeJS/tree/main/Day10_NotificationSerWithCronJob}{Link}].\\&
         Periodically send a scheduled Notification using scheduled using CronJob. \\
+    \end{longtable}
+% \end{table}
 
-       
-    \end{tabular}
-\end{small}
+% \end{small}
 
 \end{document}
