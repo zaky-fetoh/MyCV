@@ -115,56 +115,44 @@
 \end{tabular}
 %%END TABLE
 
-%------------------
-%	PUBLICATIONS
-%	
-%	If authors have special letters/accents check this table: https://en.wikibooks.org/wiki/LaTeX/Special_Characters
-%	put your name in \textbf{YOUR NAME} 
-%
-%	The maybe easiest way to enter your publications: 
-%		1) go to https://scholar.google.de/
-% 		2) search for you publication
-%		3) below you publication, click the second 'cite' sign and select 'BibTeX'
-%		4) from the entry that shows up, copy the title, authors, journal, year, etc. into this document
-%				--> special letters and accents will be already included in the correct format!
-%------------------
-\section{\textbf{Ten Publications}}  
+
+\section{\textbf{Project Experience}}  
 
 \begin{small}
+    \begin{tabular}{r p{16cm}}
+        2023  
+        2022  & \textbf{Image Manager}, [\href{https://github.com/zaky-fetoh/image-maneger-microservices-app}{Link}].  \\& Microservices application for image storage, stored in plain form or encrypted form, with it's meta data and automatic tagging using Deep learning techniques. \\&
+        It consists of three microservices as follow:\\&
+        \begin{itemize}
+            \item \textbf{Image-Classification micro-service:}
+            This micro-service is responsible for classifying images using ResNet18 other services can communicate with it using synchronous communication using by 
+            requesting it RESTfull API or through asynchronous communication using RabbitMQ.
+            \begin{itemize}
+                \item \textit{built with: } Python, Pytorch, Flask, and pika.
+            \end{itemize}
 
-P. Möbius, G. Nordsiek, \textbf{M. Hölzer}, M. Jarek, M. Marz, and H. Köhler.
-Complete Genome Sequence of JII-1961, a Bovine \emph{Mycobacterium avium} subsp.\ \emph{paratuberculosis} Field Isolate from Germany.
-\emph{Genome Announc.} 5(34), 2017. 
+            \item \textbf{Image-Storage micro-service:}
+            This micro-service is responsible for storing the images the users in either plain or encrypted, using AES, form other microservices can communicate with it using it's RESTfull API.
+            \begin{itemize}
+                \item \textit{built with: } NodeJS, Express, Multer, and crypto.
+            \end{itemize}
 
-J. Fuchs, \textbf{M. Hölzer}, M.Schilling, C. Patzina, A. Schoen, T. Hoenen, G. Zimmer, M. Marz, F. Weber, M. A. Müller, and G. Kochs.
-Evolution and Antiviral Specificities of Interferon-Induced Mx Proteins of Bats against Ebola, Influenza, and Other RNA Viruses.
-\emph{J Virol.} 12; 91(15), 2017. 
+            \item \textbf{Image-manager micro-service:}
+            This micro-service is responsible for 1) storing the meta-data, such as Image's owner and the image Tags, automatically added by Image Classification micro-service, and the total number of views, 2) manage users, users credentials and authentication 3) communicate with Image-Classification microservice using RabbitMQ and With Image-Storage through it's RESTfull API.
+            \begin{itemize}
+                \item \textit{built with: }NodeJS, Express, Mongoose, JWT, bcrypt, amqplib, and Joi.
+            \end{itemize}
+        \end{itemize}\\
+        2022  & \textbf{Clinic Management System}, [\href{https://github.com/zaky-fetoh/Clinic-Management-System}{Link}].\\&
+        A backend System for managing clinics, it's department, medical stuff, and patients. This 	System provides a RESTfull, and GraphQL for clients. Complex mongodb aggregation pipeline 	is implemented for extracting high level info.
+        \begin{itemize}
+            \item \textit{built with: } NodeJS, Express, Mongoose, graphql, and Joi. 
+        \end{itemize}\\
+        2022  & \textbf{Notification Server}, [\href{https://github.com/zaky-fetoh/Learning-Backend-Development-Using-NodeJS/tree/main/Day10_NotificationSerWithCronJob}{Link}].\\&
+        Periodically send a scheduled Notification using scheduled using CronJob. \\
 
-\textbf{M.~H\"olzer}, V.~Kr\"ahling, F.~Amman, E.~Barth, S.~H.~Bernhart, V.~A.~O.~Carmelo,  M.~Collatz, G.~Doose, F.~Eggenhofer, J.~Ewald, J.~Fallmann, L.~M.~Feldhahn, M.~Fricke, J.~Gebauer, A.~J.~Gruber, F.~Hufsky, H.~Indrischek, S.~Kanton, J.~Linde, N.~M.~Berrospi, R.~Ochsenreiter, K.~Rieger, L.~Rivarola-Duarte, A.~H.~Sahyoun, S.~J.~Saunders, S.~E.~Seemann, A.~Tanzer, B.~Vogel, S.~Wehner, M.~T.~Wolfinger, R.~Backofen, J.~Gorodkin, I.~Grosse, I.~Hofacker, S.~Hoffmann, C.~Kaleta, P.~F.~Stadler, S.~Becker, and M.~Marz.
-Differential transcriptional responses to Ebola and Marburg virus infection in bat and human cells.
-\emph{Scientific reports} 6:34589, 2016.
-
-A. H. Sahyoun, \textbf{M. Hölzer}, F. Jühling, C. Höner Zu Siederdissen, M. Al-Arab, K. Tout, M. Marz, M. Middendorf, P. F. Stadler, and M.~Bernt. 
-Towards a comprehensive picture of alloacceptor {tRNA} remolding in metazoan mitochondrial genomes. 
-\emph{Nucleic Acids Res.} 43(16):8044--8056, 2015.
-
+       
+    \end{tabular}
 \end{small}
-
-
-
-%------------------
-%	SCHOLARSHIPS AND ADDITIONAL INFO
-%------------------
-%\section{Scholarships and Certificates}
-
-%\begin{tabular}{rl}
-%\textsc{Sept.} 2018 		& Faculty of Science Masters Scholarship \footnotesize(30,000 $\euro$)\normalsize\\
-
-%\end{tabular}
-
-
-
-
-
 
 \end{document}
