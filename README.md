@@ -1,1 +1,1 @@
-My [cv](./cv.pdf) is name cv.pdf in this repo
+My [cv](./ZAky.pdf) is name cv.pdf in this repo
