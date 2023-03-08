@@ -14,11 +14,7 @@
 %% UNTIL HERE 
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
-\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
-% \usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
-% \usepackage{fullpage}
-% \addtolength{\textwidth}{5cm}
-% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+\usepackage[usenames,dvipsnames]{xcolor} % Required for 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
@@ -32,38 +28,6 @@
 \usepackage{array, booktabs, longtable}
 \newcolumntype{x}[1]{>{\raggedright}p{#1}}
 
-% \usepackage{etoolbox}
-% \AtBeginEnvironment{longtable}{%
-%     \setlist[itemize]{nosep,     % <-- new list setup
-%                       topsep     = 0pt       ,
-%                       partopsep  = 0pt       ,
-%                       leftmargin = *         ,
-%                       label      = $\bullet$ ,
-%                       before     = \vspace{-\baselineskip},
-%                       after      = \vspace{-0.5\baselineskip}
-%                         }
-%                            }% end of AtBeginEnvironment
-
-%------------------
-%------------------
-%	MAIN DOCUMENT - PLEASE ENTER YOUR DATA HERE
-%
-%	Some basic LaTeX commands: 
-%
-%	A '%' marks a comment that will not be shown in the final PDF
-%	If you want to remove content, just comment the line(s) with a leading '%'
-%
-%	When you open an environment with a '{' you need to close it with a corresponding '}'!
-%
-%	\textbf{TEXT} 						makes TEXT bold font
-%	\emph{TEXT} 						makes TEXT italics font
-%	\textsc{TEXT}						makes TEXT small caps font
-%	\small \footnotesize \Huge ...		defines font sizes
-%	\begin{tabular} ... \end{tabular} 	defines a table environment
-%										inside a table environment a '&' sign splits between columns 
-%										inside a table a '\\' marks the end of a row
-%------------------
-%------------------
 \begin{document}
 \pagestyle{empty} % Removes page numbering
 \font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
@@ -143,7 +107,7 @@
             \item \textit{built with: } NodeJS, Express, Mongoose, graphql, and Joi. 
         \end{itemize}\\
 
-        
+
         2022  & \textbf{Image Manager}, [\href{https://github.com/zaky-fetoh/image-maneger-microservices-app}{Link}].  \\& Microservices application for image storage, stored in plain form or encrypted form, with it's meta data and automatic tagging using Deep learning techniques. \\&
         It consists of three microservices as follow:\\&
         \begin{itemize}
