@@ -59,18 +59,18 @@
 \section{\textbf{Frameworks \& Technical Skills}}
 
 \begin{tabular}{rl}	
-    \textbf{Languages}:& Python, NodeJS, GoLang(learning)\\
+    \textbf{Languages}:& Python, NodeJS, GoLang (learning)\\
     \textbf{Programming Paradigms}:&  Object-oriented programming (OOP) and Functional Programming (FP).\\
     \textbf{HTTP Servers Frameworks}:& ExpressJS, Flask.\\
-    \textbf{Front-End Frameworks}:& ReactJS, Angular(learning).\\
+    \textbf{Front-End Frameworks}:& ReactJS, Angular (learning).\\
     \textbf{Version Control Tools}:& Git, Github, Bitbucket.\\
     \textbf{Client API}:& REST, GraphQL, gRPC, SocketIO.\\
     \textbf{Databases}:& MONGODB, MySQL, PostgreSQL, MariaDB.\\
     \textbf{Data Science}:& PyTorch, Pandas, statsmodels, Prophet, Numpy, OpenCV, Plotly.\\
     \textbf{Security Utilities}:& Joi, Jsonwebtoken (JWT).\\ 
-    \textbf{DevOps}:& Docker, Docker-Compose, Kubernetes(learning).\\
-    \textbf{Message Broker}:& RabbitMQ, Kafka(learning).\\
-    \textbf{Caching}:& Redis, MinIO(learning).\\
+    \textbf{DevOps}:& Docker, Docker-Compose, Kubernetes (learning).\\
+    \textbf{Message Broker}:& RabbitMQ, Kafka (learning).\\
+    \textbf{Caching}:& Redis, MinIO (learning).\\
     \textbf{Testing}:& Jest.\\ 
 \end{tabular}
 %%END TABLE
@@ -84,13 +84,13 @@
         2023  & \textbf{Personal Blog Site}, [\href{https://github.com/zaky-fetoh/Personal-Blog-Site}{Link}].\\&
         This is a MERN stack project that manage personal blog and store it in MONGODB database. It performs caching for quary using redis. It's frontend is build using ReactJS and it state is managed using Redux-toolkit.
         \begin{itemize}
-            \item \textit{built with: } NodeJS, ExpressJS,  ReactJS, Crypto, Redis, MongoDB, Docker-Compose, Redux-toolkit, formik, and yup.
+            \item \textit{Built with: } NodeJS, ExpressJS,  ReactJS, Crypto, Redis, MongoDB, Docker-Compose, Redux-toolkit, formik, and yup.
         \end{itemize}\\
 
         2022  & \textbf{Clinic Management System}, [\href{https://github.com/zaky-fetoh/Clinic-Management-System}{Link}].\\&
         A backend System for managing clinics, it's department, medical stuff, and patients. This 	System provides a RESTfull, and GraphQL for clients. Complex mongodb aggregation pipeline 	is implemented for extracting high level info.
         \begin{itemize}
-            \item \textit{built with: } NodeJS, Express, Mongoose, graphql, and Joi. 
+            \item \textit{Built with: } NodeJS, Express, Mongoose, graphql, and Joi. 
         \end{itemize}\\
 
 
@@ -101,20 +101,32 @@
             This micro-service is responsible for classifying images using ResNet18 other services can communicate with it using synchronous communication using by 
             requesting it RESTfull API or through asynchronous communication using RabbitMQ.
             \begin{itemize}
-                \item \textit{built with: } Python, Pytorch, Flask, and pika.
+                \item \textit{Built with: } Python, Pytorch, Flask, pika.
             \end{itemize}
 
             \item \textbf{Image-Storage micro-service:}
             This micro-service is responsible for storing the images the users in either plain or encrypted, using AES, form other microservices can communicate with it using it's RESTfull API.
             \begin{itemize}
-                \item \textit{built with: } NodeJS, Express, Multer, and crypto.
+                \item \textit{Built with: } NodeJS, Express, Multer, crypto.
             \end{itemize}
 
             \item \textbf{Image-manager micro-service:}
             This micro-service is responsible for 1) storing the meta-data, such as Image's owner and the image Tags, automatically added by Image Classification micro-service, and the total number of views, 2) manage users, users credentials and authentication 3) communicate with Image-Classification microservice using RabbitMQ and With Image-Storage through it's RESTfull API.
             \begin{itemize}
-                \item \textit{built with: }NodeJS, Express, Mongoose, JWT, bcrypt, amqplib, and Joi.
+                \item \textit{Built with: }NodeJS, Express, Mongoose, JWT, bcrypt, amqplib, Joi.
             \end{itemize}
+
+            \item \textbf{Route-Advertisement micro-service:}
+            To avoid manually adjust API Gateway for adding public route route-advertiment (RA) manages all routes for the entire micro-service application. Any service wants to advertise a specific public route it can HTTP POST this route to RA through it's RESTfull API. RA assumes order of routes does not matter. RA allows dynamically adding routes to the API Gateway.
+            \begin{itemize}
+                \item \textit{Built with: }NodeJS, Express, Mongoose, axios, JWT.
+            \end{itemize} 
+
+            \item \textbf{API Gateway micro-service:}
+            API Gateway (GW) micro-service periodically request new added routes to route-advertisement. Every GW is responsible of keep tracking it's state and request missed routes.
+            \begin{itemize}
+                \item \textit{Built with: }NodeJS, Express, Mongoose, axios, cron.
+            \end{itemize} 
         \end{itemize}\\
 
         2022  & \textbf{Notification Server}, [\href{https://github.com/zaky-fetoh/Learning-Backend-Development-Using-NodeJS/tree/main/Day10_NotificationSerWithCronJob}{Link}].\\&
