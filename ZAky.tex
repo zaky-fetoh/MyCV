@@ -5,19 +5,19 @@
 \usepackage{xunicode,xltxtra,url,parskip} 
 \usepackage[usenames,dvipsnames]{xcolor}  
 \usepackage{hyperref} 
-\definecolor{linkcolour}{rgb}{0,0.2,0.6} 
-\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} 
-\usepackage{titlesec} 
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] 
-\titlespacing{\section}{0pt}{3pt}{3pt} 
 \usepackage{float}
 \usepackage{placeins}
 \usepackage{tabularray}
 \usepackage{enumitem}
 \usepackage{array, booktabs, longtable}
+\usepackage{titlesec} 
+\usepackage{fancyhdr}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} 
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} 
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] 
+\titlespacing{\section}{0pt}{3pt}{3pt} 
 \newcolumntype{x}[1]{>{\raggedright}p{#1}}
 
-\usepackage{fancyhdr}
 
 \begin{document}
 \pagestyle{fancy}
@@ -25,7 +25,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot[R]{\textbf{Zaky Fetoh}}
 % \fancyfoot[C]{[~Page~\thepage~of~\pageref{LastPage}~]}
-\fancyfoot[C]{[~Page~\thepage~of~2~]}
+\fancyfoot[C]{[~Page~\thepage~of~3~]}
 
 \font\fb=''[cmr10]'' 
 \par{\centering{\Huge \textsc{Mahmoud Zaky Fetoh}}\bigskip\par} % Your name
@@ -41,7 +41,7 @@
 \end{tabular}
 
 \section{\textbf{Objective}}
-~~~~~~I am a junior MERN stack engineer passionate about solving a real-world problem, working and collaborate with a great Engineers that I can learn from. I have strong knowledge of algorithms and writing efficient and high performing code. 
+~~~~~~I am a DevOps Engineer passionate about solving a real-world problem, working and collaborate with a great Engineers that I can learn from. I have mixed experience across various discipline such as full stack development, data Science, computer vision and mainly devops Engineer. 
 
 \section{\textbf{Education}}
 \begin{tabular}{r|l}
@@ -60,21 +60,29 @@
 
 \begin{tabular}{r|l}
     May 2023 - Present & \textbf{DevOps Engineer} @
-    \textbf{n-go}, KSA. \\ 
-
+    \textbf{n-go}, KSA. \\&
+    Administrating kubernetes clusters for 1M user Application. \\&
+    \textit{-Technologies}:\\&
+    \textbf{Clould Provider}: AWS, OCI. \\&
+    \textbf{Kubernetes}: EKS, OKE. \\&
+    \textbf{CI/CD}: Jenkins, GitHub actions, ArgoCD. \\&
+    \textbf{kubernetes Autoscaler}: Cluster Autoscaler, karpenter. \\&
+    \textbf{monitoring}: Prometheus, Grafana, Loki, ELK, Kiali, Jaeger. \\&
+    \textbf{IaC}: Terraform, Kustomize, Helm, Ansible.\\&
+    \textbf{DNS and firewall}: Cloudflare.\\&
+    \textbf{Service Mesh}: Istio. \\&
     \\
-    Jan 2023 - Apr 2023 & \textbf{Machine Learning Engineer} @
+    Jan 2023 - Apr 2023 & \textbf{MLops Engineer} @
     \textbf{Susoft}, Norway. \\& 
     Building microservice application for Training and deploying machine and deep learning \\& models for Sales forecasting. 
     Performing customer segmentation to direct marketing \\& campaigns. \\&
     \textit{-Technologies}:\\&
      \textbf{Model Training}: PyTorchForecasting, Pytorch, pandas, Prophet, NeuralProphet. \\&
-     \textbf{Model Monitoring}: Weight and biases.\\&
-     \textbf{Model Serving}: torchScript. \\&
+     \textbf{Model Monitoring}: Weight and biases, Prometheus, Grafana.\\&
+     \textbf{Model Serving}: torchScript, Docker, K8s. \\&
      \textbf{Model Registry}: Minio. \\&
-     \textbf{Running Environment}: Docker compose.\\&
     Asynchronous communication for issuing train request is done using RabbitMQ \\&
-    Gateway and load balancing services performed using NodeJS.
+    Gateway and load balancing services performed using NodeJS. 
 \\
 \end{tabular}
 
@@ -91,20 +99,70 @@
     \textbf{Data Science}:& PyTorch, Pandas, statsmodels, Prophet, Numpy, OpenCV, Plotly.\\
     \textbf{Security Utilities}:& Joi, Jsonwebtoken (JWT), OAuth 2.0.\\ 
     \textbf{DevOps \& CI/CD}:& CCNA, MCSA, RHCSA, AWS, Docker-Compose, Kubernetes,\\
-                            & Jenkins, Terraform, ArgoCD, Istio. \\
-    \textbf{Message Broker}:& RabbitMQ, Kafka (learning).\\
-    \textbf{Testing \& Monitoring}:& Jest, Prometheus, Grafana.\\ 
+    & Jenkins, Terraform, Ansible, cloudflare, ArgoCD, Istio. \\
+    \textbf{Testing \& Monitoring}:& Jest, Prometheus, Grafana, Loki, ELK, kiali, jaeger.\\ 
+    \textbf{Message Broker}:& RabbitMQ, Kafka, SQS.\\
     \textbf{Documentation}:& Swagger, \LaTeX.\\
     \textbf{Caching}:& Redis, MinIO.\\
 \end{tabular}
 %%END
+\newpage
+% \section{\textbf{Publications}}  
+%     \begin{longtable}{r p{16cm}}
+%         2022  & \textbf{Multiscale aware classification of COVID-19 from Chest X-Ray using a spatially weighted atrous spatial pyramid pooling CNN}.\\& \textbf{Mahmoud Z fetoh}, Khalid M. Amin, Ahmed M. Hamad \\&
+%         In this paper I propose, scale invariant CNN architecture for COVID-19 classification. Proposed model based on building a scale space in each layer using Atrous spatial pyramid pooling then selecting a correct space to operate at using spatial attention module.\\&
+%         \textbf{Published at}: submitted. \\
+%         &\\
+%         2021  & \textbf{COVID-19 Detection Based on Chest X-Ray Image Classification using Tailored CNN Model}, [\href{https://scholar.google.com/scholar?cluster=12675761567539204826&hl=en&as_sdt=0,5}{Link}].
+%         \textbf{Mahmoud Z fetoh}, Khalid M. Amin, Ahmed M. Hamad \\&
+%         In this paper I propose a very light-weight model as a consequence of using spatial separable kernel and depth-wise separable kernels for COVID-19 classification.\\&
+%         \textbf{Published at}: IJCI.  
+%         \\
+%     \end{longtable}
 
- 
+
 \section{\textbf{Project Experience}}  
-
 % \begin{small}
     % \begin{table}[h]
     \begin{longtable}{r p{16cm}}
+
+        2023  & \textbf{Migrating of CI/CD}, [n-go].\\&
+        Complete Pipeline Automation for service creating and update.
+        \begin{itemize}
+            \item Re-organizing all k8s manifests using Kustomize.
+            \item Automating service creation and DNS record insertion. 
+            \item Exposing REST api allows the DevTeam to modify env vars.
+            \item configuring the App-of-apps as Helm chart to reduce duplication.
+            \item Making all services follows ArgoCD app-of-apps pattern.
+            \item Migration of all CI/CD pipeline from bitbuckets to github.
+            \item Full integration with Jenkins pipeline. 
+        \end{itemize}
+        \textit{tools used: } Kustomize, Jenkins, argoCD, Python, NodeJS, bashScript, Reloader, Helm.\\
+        &\\ 
+        2023  & \textbf{Remote Job Initiation}, [n-go].\\&
+        Creating REST API to allow the dev team to remotely intiate K8s any job/cronjob (providing Image:tag for the container) on the cluster. This API responds with job status and the logs. Also configuring appropriate RBAC priveldge to the service.
+        \begin{itemize}
+            \item \textit{tools used: } Kubectl, bashScript, NodeJS.
+        \end{itemize}\\
+
+        2023  & \textbf{Monitoring \& Alert manager}, [n-go].\\&
+        configuring Prometheus-kube-stuck, loki, uptime-kuma, kiali, and jaeger to monitor the k8s cluster. Integrating Istio with Prometheus to collect service mesh metrics. Integrating With slack to notify a cretical ops isuees.
+        \begin{itemize}
+            \item \textit{tools used: } Prometheus, Grafana, Loki, uptime-kuma, kiali, jaeger.
+        \end{itemize}\\
+
+        2023  & \textbf{Complete Infrastucture Migrating from root AWS account to new AWS account}, [n-go].\\&
+        Complate migration of dev (dev, testing, staging) to new aws account to allow devTeam to access separetly using SSO of G-suit. 
+        \begin{itemize}
+            \item  Migration of all AWS services (EKS, RDS, S3, Redshift, DMS, SQS) account to new AWS account.
+            \item Configuring EKS and related nodeGroup, CSI driver, EC2 template.
+            \item configuring Istio service mesh and integrating it with Prometheus. 
+            \item Configuring cert manager to stablish TLS connections.
+            \item Reorganizing AWS VPC and producing terraform code for it. 
+            \item allow above is created with terraform.
+        \end{itemize}
+        \textit{tools used: } Terraform, EKS, Cert-manager, Istio.\\
+        &\\
         2023  & \textbf{Personal Blog Site}, [\href{https://github.com/zaky-fetoh/Personal-Blog-Site}{Link}].\\&
         This is a MERN stack project that manage personal blog and store it in MONGODB database. It performs caching for quary using redis. It's frontend is build using ReactJS and it state is managed using Redux-toolkit.
         \begin{itemize}
@@ -184,8 +242,8 @@
             \end{itemize} 
         \end{itemize}\\
 
-        2022  & \textbf{Notification Server}, [\href{https://github.com/zaky-fetoh/Learning-Backend-Development-Using-NodeJS/tree/main/Day10_NotificationSerWithCronJob}{Link}].\\&
-        Periodically send a scheduled Notification using scheduled using CronJob. \\
+        % 2022  & \textbf{Notification Server}, [\href{https://github.com/zaky-fetoh/Learning-Backend-Development-Using-NodeJS/tree/main/Day10_NotificationSerWithCronJob}{Link}].\\&
+        % Periodically send a scheduled Notification using scheduled using CronJob. \\
     \end{longtable}
     % \end{table}
     % \end{small}
