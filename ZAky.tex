@@ -25,7 +25,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot[R]{\textbf{Zaky Fetoh}}
 % \fancyfoot[C]{[~Page~\thepage~of~\pageref{LastPage}~]}
-\fancyfoot[C]{[~Page~\thepage~of~3~]}
+\fancyfoot[C]{[~Page~\thepage~of~4~]}
 
 \font\fb=''[cmr10]'' 
 \par{\centering{\Huge \textsc{Mahmoud Zaky Fetoh}}\bigskip\par} % Your name
@@ -57,19 +57,24 @@
 % \\
 % \end{tabular}
 \section{\textbf{Work Experience}}
-
+% May 2023 - Present
 \begin{tabular}{r|l}
-    May 2023 - Present & \textbf{DevOps Engineer} @
+    Dec 2023 - Present& \textbf{Cloud Consltant} @
+    \textbf{Bexprt}, KSA. \\&
+    Involved at MLOps and DevOps projects. \\&
+    \textit{-Technologies}:\\&
+    \textbf{Clould Provider}: AWS. \\&
+    \\
+    May 2023 - Dec 2023 & \textbf{DevOps Engineer} @
     \textbf{n-go}, KSA. \\&
     Administrating kubernetes clusters for 1M user Application. \\&
     \textit{-Technologies}:\\&
-    \textbf{Clould Provider}: AWS, OCI. \\&
+    \textbf{Clould Provider}: AWS, OCI, Cloudflare. \\&
     \textbf{Kubernetes}: EKS, OKE. \\&
     \textbf{CI/CD}: Jenkins, GitHub actions, ArgoCD. \\&
     \textbf{kubernetes Autoscaler}: Cluster Autoscaler, karpenter. \\&
     \textbf{monitoring}: Prometheus, Grafana, Loki, ELK, Kiali, Jaeger. \\&
     \textbf{IaC}: Terraform, Kustomize, Helm, Ansible.\\&
-    \textbf{DNS and firewall}: Cloudflare.\\&
     \textbf{Service Mesh}: Istio. \\&
     \\
     Jan 2023 - Apr 2023 & \textbf{MLops Engineer} @
@@ -88,7 +93,7 @@
 
 \section{\textbf{Frameworks \& Technical Skills}}
 
-\begin{tabular}{rl}	
+\begin{longtable}{r p{16cm}}	
     \textbf{Programming Languages}:& Python, NodeJS, GoLang (learning)\\
     % \textbf{Programming Paradigms}:&  Object-oriented programming (OOP) and Functional Programming (FP).\\
     \textbf{HTTP Servers Frameworks}:& ExpressJS, Flask.\\
@@ -104,21 +109,20 @@
     \textbf{Message Broker}:& RabbitMQ, Kafka, SQS.\\
     \textbf{Documentation}:& Swagger, \LaTeX.\\
     \textbf{Caching}:& Redis, MinIO.\\
-\end{tabular}
+\end{longtable}
 %%END
-\newpage
-% \section{\textbf{Publications}}  
-%     \begin{longtable}{r p{16cm}}
-%         2022  & \textbf{Multiscale aware classification of COVID-19 from Chest X-Ray using a spatially weighted atrous spatial pyramid pooling CNN}.\\& \textbf{Mahmoud Z fetoh}, Khalid M. Amin, Ahmed M. Hamad \\&
-%         In this paper I propose, scale invariant CNN architecture for COVID-19 classification. Proposed model based on building a scale space in each layer using Atrous spatial pyramid pooling then selecting a correct space to operate at using spatial attention module.\\&
-%         \textbf{Published at}: submitted. \\
-%         &\\
-%         2021  & \textbf{COVID-19 Detection Based on Chest X-Ray Image Classification using Tailored CNN Model}, [\href{https://scholar.google.com/scholar?cluster=12675761567539204826&hl=en&as_sdt=0,5}{Link}].
-%         \textbf{Mahmoud Z fetoh}, Khalid M. Amin, Ahmed M. Hamad \\&
-%         In this paper I propose a very light-weight model as a consequence of using spatial separable kernel and depth-wise separable kernels for COVID-19 classification.\\&
-%         \textbf{Published at}: IJCI.  
-%         \\
-%     \end{longtable}
+% \newpage
+\section{\textbf{Publications}}  
+    \begin{longtable}{r p{16cm}}
+        2022  & \textbf{Multiscale aware classification of COVID-19 from Chest X-Ray using a spatially weighted atrous spatial pyramid pooling CNN}[\href{https://www.researchsquare.com/article/rs-3043485/v1}{Link}].\\& \textbf{Mahmoud Z fetoh}, Khalid M. Amin, Ahmed M. Hamad \\&
+        In this paper I propose, scale invariant CNN architecture for COVID-19 classification. Proposed model based on building a scale space in each layer using Atrous spatial pyramid pooling then selecting a correct space to operate at using spatial attention module.\\
+        &\\ 
+        2021  & \textbf{COVID-19 Detection Based on Chest X-Ray Image Classification using Tailored CNN Model}, [\href{https://scholar.google.com/scholar?cluster=12675761567539204826&hl=en&as_sdt=0,5}{Link}].
+        \textbf{Mahmoud Z fetoh}, Khalid M. Amin, Ahmed M. Hamad \\&
+        In this paper I propose a very light-weight model as a consequence of using spatial separable kernel and depth-wise separable kernels for COVID-19 classification.\\&
+        \textbf{Published at}: IJCI.  
+        \\
+    \end{longtable}
 
 
 \section{\textbf{Project Experience}}  
@@ -126,18 +130,41 @@
     % \begin{table}[h]
     \begin{longtable}{r p{16cm}}
 
+        2023  & \textbf{Internal Developer Platform}, [n-go].\\&
+        Creating IDP that provide automate frequent devTeam tasks i.e) changing the Env variables of the running kubernetes Services. It secured with JWT as application level security. And behind Zero-Trust Network as infrastucture level security.          
+        \begin{itemize}
+            \item Exposing NodeJS REST API as Backend. 
+            \item Simple UI using ReactJS for frequent tasks. 
+            \item IDP backend is Secured with JWT. 
+        \end{itemize}
+        \textit{tools used: } NodeJS, Python, bashScript, ReactJS.\\
+        &\\ 
+
+        2023  & \textbf{Security Enhancement}, [n-go].\\&
+        I helped my team deploying Zero-Trust network to allow  DevTeam to access the Infrastucture securely. \\
+        &\\ 
+
+        2023  & \textbf{Secret-free manifests}, [n-go].\\&
+        For security concerns we removed all AWS secrets from manifests and replaced It with IRSA allowing k8s pods to assume an IAM role to access AWS directly. Also all non-aws secrets are moved to secret manager. 
+        \begin{itemize}
+            \item IRSA for k8s pods.
+            \item Crossplane for automatic secret creation at aws secret manager.
+            \item Full integration with CD pipeline using crossplane. 
+        \end{itemize}
+        \textit{tools used: } Kustomize, awscli, External-Secrets-Operator, IRSA, bashScript, Reloader, crossplane.\\
+        &\\ 
+
         2023  & \textbf{Migrating of CI/CD}, [n-go].\\&
         Complete Pipeline Automation for service creating and update.
         \begin{itemize}
             \item Re-organizing all k8s manifests using Kustomize.
             \item Automating service creation and DNS record insertion. 
-            \item Exposing REST api allows the DevTeam to modify env vars.
-            \item configuring the App-of-apps as Helm chart to reduce duplication.
+            \item Configuring the App-of-apps as Helm chart to reduce duplication.
             \item Making all services follows ArgoCD app-of-apps pattern.
             \item Migration of all CI/CD pipeline from bitbuckets to github.
             \item Full integration with Jenkins pipeline. 
         \end{itemize}
-        \textit{tools used: } Kustomize, Jenkins, argoCD, Python, NodeJS, bashScript, Reloader, Helm.\\
+        \textit{tools used: } Kustomize, Jenkins, argoCD, Python, bashScript, Reloader, Helm.\\
         &\\ 
         2023  & \textbf{Remote Job Initiation}, [n-go].\\&
         Creating REST API to allow the dev team to remotely intiate K8s any job/cronjob (providing Image:tag for the container) on the cluster. This API responds with job status and the logs. Also configuring appropriate RBAC priveldge to the service.
