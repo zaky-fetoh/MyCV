@@ -1,0 +1,18 @@
+# Fdb version 3
+["pdflatex"] 1711402629 "/home/zaky/zaky-ghb/MyCV/ZAky.tex" "ZAky.pdf" "ZAky" 1711402629
+  "/etc/texmf/web2c/texmf.cnf" 1710710387 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/zaky/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1710718786 1405652 9d0e2ea7ef4188b9e742d2d3544e5512 ""
+  "/home/zaky/zaky-ghb/MyCV/ZAky.tex" 1711402628 20104 1794e4b4f30c28cb8622bb5b8a52195f ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1636758526 20144 8a7de377ae7a11ee924a7499611f5a9d ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo" 1636758526 8448 96f18c76bf608a36ee6fbf021ac1dd32 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty" 1642282977 1656 7e824878bad4df5a3e8bba4e463d9126 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1642022539 29921 f0f4f870357ebfb8fe58ed9ed4ee9b92 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty" 1642805374 6107 429b3b241150e53f86ce666eb492861e ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty" 1642022539 6758 7d9d899cbbfc962fbc4bb93f4c69eec2 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
+  "ZAky.aux" 1711402629 32 3985256e7290058c681f74d7a3565a19 ""
+  "ZAky.tex" 1711402628 20104 1794e4b4f30c28cb8622bb5b8a52195f ""
+  (generated)
+  "ZAky.log"
+  "ZAky.pdf"

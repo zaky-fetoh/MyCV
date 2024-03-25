@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.18)  18 MAR 2024 02:23
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.3.18)  25 MAR 2024 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -679,17 +679,17 @@ Overfull \hbox (21.08463pt too wide) in paragraph at lines 64--103
 [1
 
 ]
-Overfull \hbox (137.91864pt too wide) in alignment at lines 106--127
+Overfull \hbox (137.91864pt too wide) in alignment at lines 106--128
  [] [] 
  []
 
 
-Overfull \hbox (17.36864pt too wide) in alignment at lines 131--140
+Overfull \hbox (17.36864pt too wide) in alignment at lines 132--141
  [] [] 
  []
 
 
-Overfull \hbox (17.36864pt too wide) in alignment at lines 146--321
+Overfull \hbox (17.36864pt too wide) in alignment at lines 147--322
  [] [] 
  []
 
@@ -703,7 +703,7 @@ Package rerunfilecheck Info: File `ZAky.out' has not changed.
 Here is how much of TeX's memory you used:
  18125 strings out of 478190
  349572 string characters out of 5854813
- 741715 words of memory out of 5000000
+ 742715 words of memory out of 5000000
  38538 multiletter control sequences out of 15000+600000
  469723 words of font info for 42 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

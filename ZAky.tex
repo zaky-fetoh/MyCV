@@ -70,7 +70,7 @@
     \textbf{Clould Provider}: AWS, Cloudflare. \\&
     \textbf{CI/CD}: Github Actions, Atlantis, Terraform Cloud. \\&
     \textbf{ETL}: AWS Glue Crawler, Glue Database, Glue Job, S3, Firehose. \\&
-    \textbf{ML Model Deployment}: SageMaker, bentoml, Prefect, MLflow. \\&
+    \textbf{MLOps}: SageMaker, bentoml, Prefect, MLflow. \\&
     \textbf{Micro-frontend}: Cloudfront, S3, Route53. \\&
     \textbf{Container Orchestrators}: ECS. \\&
     \\
@@ -107,10 +107,11 @@
     \textbf{Programming Languages}:& Python, NodeJS, GoLang (learning)\\
     % \textbf{Programming Paradigms}:&  Object-oriented programming (OOP) and Functional Programming (FP).\\
     \textbf{HTTP Servers Frameworks}:& ExpressJS, Flask.\\
-    \textbf{Front-End Frameworks}:& ReactJS, Angular (learning).\\
+    \textbf{Front-End Frameworks}:& ReactJS.\\
     \textbf{Version Control Tools}:& Git, Github, Bitbucket.\\
     \textbf{Data Science}:& PyTorch, Pandas, statsmodels, Prophet, Numpy, OpenCV, Plotly,\\
-    & SageMaker, LLAMA 2, PaddleOCR.\\
+    & LLAMA 2, PaddleOCR.\\
+    \textbf{MLOps}:& SageMaker, Prefect, bentoml, Mlflow, Hydra, DVC.\\
     \textbf{Client API}:& REST, GraphQL, gRPC, SocketIO.\\
     \textbf{Security Utilities}:& Joi, Jsonwebtoken (JWT), OAuth 2.0.\\ 
     \textbf{Databases}:& MONGODB, MySQL, PostgreSQL, MariaDB.\\
@@ -119,7 +120,7 @@
     \textbf{Testing \& Monitoring}:& Jest, Prometheus, Grafana, Loki, ELK, kiali, jaeger.\\ 
     \textbf{Container Orchestrators}:& EKS, OKE, ECS, Docker-Compose. \\
     \textbf{Infrastucture as Code }:& Terraform, Kustomize, Helm, Ansible.\\
-    \textbf{CI/CD}:& Atlantis, Terraform Cloud, Jenkins, Github Actions, ArgoCD .\\
+    \textbf{CI/CD}:& Atlantis, Terraform Cloud, Jenkins, Github Actions, ArgoCD.\\
     \textbf{VPN \& ZTN}:& Pritunl, Twingate. \\
     \textbf{Message Broker}:& RabbitMQ, Kafka.\\
     \textbf{Documentation}:& Swagger, \LaTeX.\\
@@ -146,27 +147,27 @@
     \begin{longtable}{r p{16cm}}
 
         2024  & \textbf{MLOPS CI Pipeline for model Validation}, [Bexprt's Customer].\\&
-        Creating a github actions workflow to automate the validate the Prefect pipeline exection save the MLOPS team time by 90\%  
+        Creating a github actions workflow to automate the validate the Prefect pipeline exection save the MLOPS team time by 90\%.
         \begin{itemize}
-            \item \textit{tools used: } Terraform, Github actions.
+            \item \textit{tools used: } Terraform, Github actions, Self-hosted runner.
         \end{itemize}\\
     
         2024  & \textbf{Secured CI/CD pipeline}, [Bexprt's Customer].\\&
         Integrating OpenID connect (OIDC) to github actions on automated way using terraform. 
         \begin{itemize}
-            \item \textit{tools used: } Terraform, Github actions.
+            \item \textit{tools used: } Terraform, Github actions, OIDC.
         \end{itemize}\\
 
         2024  & \textbf{Data-center Migration}, [Bexprt's Customer].\\&
-        producing Terraform code and Migrating all datalake related services to new AWS account and providing cross account access to ETL pipelines.
+        producing Terraform code and Migrating all datalake related services to new AWS account and providing cross account access to ETL pipelines. Also architected and implemented a datalake backup solution.
         \begin{itemize}
-            \item \textit{tools used: } Terraform, DMS, DataSync, S3, RDS, ECS, Glue Job, Glue Crawler, Firehose, IAM.
+            \item \textit{tools used: } Terraform, DMS, DataSync, S3, RDS, ECS, Glue Job, Glue Crawler, Firehose, IAM, bashScript, EventBridge.
         \end{itemize}\\
    
         2024  & \textbf{Centeralizing Terraform Execution}, [Bexprt's Customer].\\&
-        Migrating the terraform to the terraform cloud. 
+        Migrating the terraform to the terraform cloud. Using OIDC to authenticate TFC to access AWS.
         \begin{itemize}
-            \item \textit{tools used: } Terraform, terraform-cloud.
+            \item \textit{tools used: } Terraform, Terraform-cloud, IAM, OIDC.
         \end{itemize}\\
    
 
