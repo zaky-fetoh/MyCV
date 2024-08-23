@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.6.25)  25 JUN 2024 18:15
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.6.25)  23 AUG 2024 08:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,41 +588,41 @@ LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
 (Font)              using `TU/lmr/bx/n' instead on input line 38.
 
 
-Overfull \hbox (21.08463pt too wide) in paragraph at lines 65--105
+Overfull \hbox (14.52461pt too wide) in paragraph at lines 47--56
 [][] 
+ []
+
+
+Overfull \hbox (21.08463pt too wide) in alignment at lines 65--108
+ [] [] 
  []
 
 [1
 
 ]
-Overfull \hbox (137.91864pt too wide) in alignment at lines 108--130
+Overfull \hbox (137.91864pt too wide) in alignment at lines 112--134
  [] [] 
  []
 
 
-Overfull \hbox (17.36864pt too wide) in alignment at lines 134--143
+Overfull \hbox (17.36864pt too wide) in alignment at lines 138--147
  [] [] 
  []
 
-
-Overfull \hbox (17.36864pt too wide) in alignment at lines 149--324
- [] [] 
- []
-
-[2] [3] [4] [5] (./ZAky.aux)
+[2] (./ZAky.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `ZAky.out' has not changed.
-(rerunfilecheck)             Checksum: FF2548E92674BC5E5807B06E11D3D3CC;736.
+(rerunfilecheck)             Checksum: 99020CC37D8DFA646970873C3AF9E9B5;600.
  ) 
 Here is how much of TeX's memory you used:
- 18126 strings out of 476191
- 349654 string characters out of 5812072
- 747999 words of memory out of 5000000
- 38671 multiletter control sequences out of 15000+600000
+ 18125 strings out of 476191
+ 349631 string characters out of 5812072
+ 717837 words of memory out of 5000000
+ 38670 multiletter control sequences out of 15000+600000
  469723 words of font info for 42 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,11n,77p,1221b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,11n,77p,1221b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ZAky.xdv (5 pages, 139356 bytes).
+Output written on ZAky.xdv (2 pages, 49648 bytes).
