@@ -187,212 +187,22 @@
 \section{\textbf{Frameworks \& Technical Skills}}
 
 \begin{longtable}{r p{16cm}}	
-    \textbf{Programming Languages}:& Python, NodeJS, GoLang (learning)\\
-    % \textbf{Programming Paradigms}:&  Object-oriented programming (OOP) and Functional Programming (FP).\\
+    \textbf{Programming Languages}:& Python, NodeJS, Bash\\
     \textbf{HTTP Servers Frameworks}:& ExpressJS, Flask.\\
-    % \textbf{Front-End Frameworks}:& ReactJS.\\
     \textbf{Version Control Tools}:& Git, Github, Bitbucket.\\
     \textbf{Data Science}:& PyTorch, Pandas, statsmodels, Prophet, Numpy, OpenCV, Plotly,\\
-    & LLAMA 2, PaddleOCR.\\
     \textbf{MLOps}:& SageMaker, Prefect, bentoml, Mlflow, Hydra, DVC.\\
     \textbf{Client API}:& REST, GraphQL, gRPC, SocketIO.\\
-    \textbf{Security Utilities}:& Joi, Jsonwebtoken (JWT), OAuth 2.0.\\ 
     \textbf{Databases}:& MONGODB, MySQL, PostgreSQL, MariaDB.\\
     \textbf{Adminstration}:& CCNA, MCSA, RHCSA, Kubernetes,\\
-    \textbf{Clould Provider}:& AWS, OCI, Cloudflare. \\
+    \textbf{Cloud Provider}:& AWS, OCI, Cloudflare. \\
     \textbf{Monitoring}:& Prometheus, Grafana, Loki, ELK, kiali, jaeger, DataDog, NewRelic.\\ 
-    \textbf{Container Orchestrators}:& EKS, OKE, ECS, Docker-Compose. \\
-    \textbf{Infrastucture as Code }:& Terraform, Kustomize, Helm, Ansible.\\
     \textbf{CI/CD}:& Atlantis, Terraform Cloud, Jenkins, Github Actions, ArgoCD.\\
+    \textbf{Infrastucture as Code}:& Terraform, Kustomize, Helm, Ansible.\\
+    \textbf{Container Orchestrators}:& EKS, OKE, ECS, Docker-Compose. \\
     \textbf{VPN \& ZTN}:& Pritunl, Twingate, Cloudflare Warp. \\
     \textbf{Message Broker}:& RabbitMQ, Kafka.\\
     \textbf{Documentation}:& Swagger, \LaTeX.\\
-    \textbf{Caching}:& Redis, MinIO.\\
 \end{longtable}
-%%END
-% \newpage
-
-
-% \section{\textbf{Project Experience}}  
-% % \begin{small}
-%     % \begin{table}[h]
-%     \begin{longtable}{r p{16cm}}
-
-%         2024  & \textbf{MLOPS CI Pipeline for model Validation}, [Bexprt's Customer].\\&
-%         Creating a github actions workflow to automate the validate the Prefect pipeline exection save the MLOPS team time by 90\%.
-%         \begin{itemize}
-%             \item \textit{tools used: } Terraform, Github actions, Self-hosted runner.
-%         \end{itemize}\\
-    
-%         2024  & \textbf{Secured CI/CD pipeline}, [Bexprt's Customer].\\&
-%         Integrating OpenID connect (OIDC) to github actions on automated way using terraform. 
-%         \begin{itemize}
-%             \item \textit{tools used: } Terraform, Github actions, OIDC.
-%         \end{itemize}\\
-
-%         2024  & \textbf{Data-center Migration}, [Bexprt's Customer].\\&
-%         producing Terraform code and Migrating all datalake related services to new AWS account and providing cross account access to ETL pipelines. Also architected and implemented a datalake backup solution.
-%         \begin{itemize}
-%             \item \textit{tools used: } Terraform, DMS, DataSync, S3, RDS, ECS, Glue Job, Glue Crawler, Firehose, IAM, bashScript, EventBridge.
-%         \end{itemize}\\
-   
-%         2024  & \textbf{Centeralizing Terraform Execution}, [Bexprt's Customer].\\&
-%         Migrating the terraform to the terraform cloud. Using OIDC to authenticate TFC to access AWS.
-%         \begin{itemize}
-%             \item \textit{tools used: } Terraform, Terraform-cloud, IAM, OIDC.
-%         \end{itemize}\\
-   
-
-%         2023  & \textbf{Micro-frontend}, [Bexprt's Customer].\\&
-%         Architecting and deplolying microfrontend application.
-%         \begin{itemize}
-%             \item \textit{tools used: } Terraform, S3, Cloudfront, cert-manger, Route53.
-%         \end{itemize}\\
-   
-
-%         2023  & \textbf{Internal Developer Platform}, [n-go].\\&
-%         Creating IDP that provide automate frequent devTeam tasks i.e) changing the Env variables of the running kubernetes Services. It secured with JWT as application level security. And behind Zero-Trust Network as infrastucture level security.
-%         \begin{itemize}
-%             \item Exposing NodeJS REST API as Backend. 
-%             \item Simple UI using ReactJS for frequent tasks. 
-%             \item IDP backend is Secured with JWT. 
-%         \end{itemize}
-%         \textit{tools used: } NodeJS, Python, bashScript, ReactJS.\\
-%         &\\ 
-
-%         2023  & \textbf{Security Enhancement}, [n-go].\\&
-%         I helped my team deploying Zero-Trust network to allow  DevTeam to access the Infrastucture securely. \\
-%         &\\ 
-
-%         2023  & \textbf{Secret-free manifests}, [n-go].\\&
-%         For security concerns we removed all AWS secrets from manifests and replaced It with IRSA allowing k8s pods to assume an IAM role to access AWS directly. Also all non-aws secrets are moved to secret manager. 
-%         \begin{itemize}
-%             \item IRSA for k8s pods.
-%             \item Crossplane for automatic secret creation at aws secret manager.
-%             \item Full integration with CD pipeline using crossplane. 
-%         \end{itemize}
-%         \textit{tools used: } Kustomize, awscli, External-Secrets-Operator, IRSA, bashScript, Reloader, crossplane.\\
-%         &\\ 
-
-%         2023  & \textbf{Migrating of CI/CD}, [n-go].\\&
-%         Complete Pipeline Automation for service creating and update.
-%         \begin{itemize}
-%             \item Re-organizing all k8s manifests using Kustomize.
-%             \item Automating service creation and DNS record insertion. 
-%             \item Configuring the App-of-apps as Helm chart to reduce duplication.
-%             \item Making all services follows ArgoCD app-of-apps pattern.
-%             \item Migration of all CI/CD pipeline from bitbuckets to github.
-%             \item Full integration with Jenkins pipeline. 
-%         \end{itemize}
-%         \textit{tools used: } Kustomize, Jenkins, argoCD, Python, bashScript, Reloader, Helm.\\
-%         &\\ 
-%         2023  & \textbf{Remote Job Initiation}, [n-go].\\&
-%         Creating REST API to allow the dev team to remotely intiate K8s any job/cronjob (providing Image:tag for the container) on the cluster. This API responds with job status and the logs. Also configuring appropriate RBAC priveldge to the service.
-%         \begin{itemize}
-%             \item \textit{tools used: } Kubectl, bashScript, NodeJS.
-%         \end{itemize}\\
-
-%         2023  & \textbf{Monitoring \& Alert manager}, [n-go].\\&
-%         configuring Prometheus-kube-stuck, loki, uptime-kuma, kiali, and jaeger to monitor the k8s cluster. Integrating Istio with Prometheus to collect service mesh metrics. Integrating With slack to notify a cretical ops isuees.
-%         \begin{itemize}
-%             \item \textit{tools used: } Prometheus, Grafana, Loki, uptime-kuma, kiali, jaeger.
-%         \end{itemize}\\
-
-%         2023  & \textbf{Complete Infrastucture Migrating from root AWS account to new AWS account}, [n-go].\\&
-%         Complate migration of dev (dev, testing, staging) to new aws account to allow devTeam to access separetly using SSO of G-suit. 
-%         \begin{itemize}
-%             \item  Migration of all AWS services (EKS, RDS, S3, Redshift, DMS, SQS) account to new AWS account.
-%             \item Configuring EKS and related nodeGroup, CSI driver, EC2 template.
-%             \item configuring Istio service mesh and integrating it with Prometheus. 
-%             \item Configuring cert manager to stablish TLS connections.
-%             \item Reorganizing AWS VPC and producing terraform code for it. 
-%             \item allow above is created with terraform.
-%         \end{itemize}
-%         \textit{tools used: } Terraform, EKS, Cert-manager, Istio.\\
-%         &\\
-%         2023  & \textbf{Personal Blog Site}, [\href{https://github.com/zaky-fetoh/Personal-Blog-Site}{Link}].\\&
-%         This is a MERN stack project that manage personal blog and store it in MONGODB database. It performs caching for quary using redis. It's frontend is build using ReactJS and it state is managed using Redux-toolkit.
-%         \begin{itemize}
-%             \item \textit{Built with: } NodeJS, ExpressJS,  ReactJS, Crypto, Redis, MongoDB, Docker-Compose, Redux-toolkit, formik, yup.
-%         \end{itemize}\\
-        
-%         2023 & \textbf{Sales Forecasting} [Susoft] \\&
-%         I build a training pipeline and serving pipeline for TFT, prophet, and NeuralProphet models. These models are used to serve about 2k market chain. It is a microservice application with the following anatomy:\\& 
-%         \begin{itemize}
-%             \item \textbf{Model Trainer microservice}: It accepts trining requests throught a rabbitMQ queue (each model type has dedicated queue). Upon receiving the request it qaurry MariaDB for required data then perform data cleaning, Feature enrichment with whether data and model training. Upon model training completion it saves the trained model to model Registry(MinIO) and notifies the gateway model training success. It also logs the traning metrics to WandB for monitoring. TFT is saves to MinIO after converting it to torchScript format for performance. 
-%             \begin{itemize}
-%                 \item \textit{Built with: } python, pika, prophet, NueralProphet, PyTorchForecasting, pandas, mariadb. 
-%             \end{itemize}
-%         \end{itemize} 
-%         \begin{itemize}
-%             \item \textbf{Model Server microservice}: It registers itself to loadbalancer microservice to allow large scale serving. Upon receiving synchronous predict request it pulls appropriate model from Model Registry(MinIO) microservices and performs may also quarry required data from mariadb and performs data enrichment required. Then performs prediction and respond with results.
-%             \begin{itemize}
-%                 \item \textit{Built with: }python, flask, pandas,  prophet, NueralProphet, PyTorchForecasting. 
-%             \end{itemize}
-%         \end{itemize} 
-%         \begin{itemize}
-%             \item \textbf{LoadBalancer microservices}: It provide load balancing service for model Server service or any service that require load balancing such that each services periodically register itself every 1min.
-%             \begin{itemize}
-%                 \item \textit{Built with: }NodeJS, Express
-%             \end{itemize}
-%         \end{itemize}
-%         \begin{itemize}
-%             \item \textbf{gateway}: It consolidates the entire application to single interface to interact with. When receiving train request it push request to appropriate RabbitMQ queue based on requested model type and when training  completed it notifies the backend that it request model can serve. when receive a predict request to quarry the loadbalancer to available instance and forward the request to it.
-%             \begin{itemize}
-%                 \item \textit{Built with: }NodeJS, Express, amqp.
-%             \end{itemize}
-%         \end{itemize}
-%         \\
-%         2022  & \textbf{Clinic Management System}, [\href{https://github.com/zaky-fetoh/Clinic-Management-System}{Link}].\\&
-%         A backend System for managing clinics, it's department, medical stuff, and patients. This 	System provides a RESTfull, and GraphQL for clients. Complex mongodb aggregation pipeline 	is implemented for extracting high level info.
-%         \begin{itemize}
-%             \item \textit{Built with: } NodeJS, Express, Mongoose, graphql, Joi. 
-%         \end{itemize}\\
-
-
-%         2022  & \textbf{Image Manager}, [\href{https://github.com/zaky-fetoh/image-maneger-microservices-app}{Link}].  \\& Microservices application for image storage, stored in plain form or encrypted form, with it's meta data and automatic tagging using Deep learning techniques. \\&
-%         It consists of three microservices as follow:\\&
-%         \begin{itemize}
-%             \item \textbf{Image-Classification micro-service:}
-%             This micro-service is responsible for classifying images using ResNet18 other services can communicate with it using synchronous communication using by 
-%             requesting it RESTfull API or through asynchronous communication using RabbitMQ.
-%             \begin{itemize}
-%                 \item \textit{Built with: } Python, Pytorch, Flask, pika.
-%             \end{itemize}
-%         \end{itemize}
-%         \begin{itemize}
-%             \item \textbf{Image-Storage micro-service:}
-%             This micro-service is responsible for storing the images the users in either plain or encrypted, using AES, form other microservices can communicate with it using it's RESTfull API.
-%             \begin{itemize}
-%                 \item \textit{Built with: } NodeJS, Express, Multer, crypto.
-%             \end{itemize}
-%         \end{itemize}
-%         \begin{itemize}
-%             \item \textbf{Image-manager micro-service:}
-%             This micro-service is responsible for 1) storing the meta-data, such as Image's owner and the image Tags, automatically added by Image Classification micro-service, and the total number of views, 2) manage users, users credentials and authentication 3) communicate with Image-Classification microservice using RabbitMQ and With Image-Storage through it's RESTfull API.
-%             \begin{itemize}
-%                 \item \textit{Built with: }NodeJS, Express, Mongoose, JWT, bcrypt, amqplib, Joi.
-%             \end{itemize}
-%         \end{itemize}
-%         \begin{itemize}
-%             \item \textbf{Route-Advertisement micro-service:}
-%             To avoid manually adjust API Gateway for adding public route route-advertiment (RA) manages all routes for the entire micro-service application. Any service wants to advertise a specific public route it can HTTP POST this route to RA through it's RESTfull API. RA assumes order of routes does not matter. RA allows dynamically adding routes to the API Gateway.
-%             \begin{itemize}
-%                 \item \textit{Built with: }NodeJS, Express, Mongoose, axios, JWT.
-%             \end{itemize} 
-%         \end{itemize}
-%         \begin{itemize}
-%             \item \textbf{API Gateway micro-service:}
-%             API Gateway (GW) micro-service periodically request new added routes to route-advertisement. Every GW is responsible of keep tracking it's state and request missed routes.
-%             \begin{itemize}
-%                 \item \textit{Built with: }NodeJS, Express, Mongoose, axios, cron.
-%             \end{itemize} 
-%         \end{itemize}\\
-
-%         % 2022  & \textbf{Notification Server}, [\href{https://github.com/zaky-fetoh/Learning-Backend-Development-Using-NodeJS/tree/main/Day10_NotificationSerWithCronJob}{Link}].\\&
-%         % Periodically send a scheduled Notification using scheduled using CronJob. \\
-%     \end{longtable}
-%     % \end{table}
-%     % \end{small}
 \label{LastPage}
 \end{document}
