@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.6.25)  14 SEP 2024 23:10
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2024.6.25)  20 SEP 2024 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,24 +588,24 @@ LaTeX Font Warning: Font shape `TU/lmr/bx/sc' undefined
 (Font)              using `TU/lmr/bx/n' instead on input line 38.
 
 
-Overfull \hbox (24.5646pt too wide) in alignment at lines 55--156
+Overfull \hbox (24.5646pt too wide) in alignment at lines 54--155
  [] [] 
  []
 
 [1
 
 ]
-Overfull \hbox (22.06462pt too wide) in alignment at lines 159--174
+Overfull \hbox (22.06462pt too wide) in alignment at lines 158--173
  [] [] 
  []
 
 [2]
-Overfull \hbox (17.36864pt too wide) in alignment at lines 177--186
+Overfull \hbox (17.36864pt too wide) in alignment at lines 176--185
  [] [] 
  []
 
 
-Overfull \hbox (137.91864pt too wide) in alignment at lines 190--212
+Overfull \hbox (137.91864pt too wide) in alignment at lines 189--211
  [] [] 
  []
 
@@ -619,10 +619,10 @@ Package rerunfilecheck Info: File `ZAky.out' has not changed.
 Here is how much of TeX's memory you used:
  18126 strings out of 476191
  349636 string characters out of 5812072
- 725889 words of memory out of 5000000
+ 726889 words of memory out of 5000000
  38671 multiletter control sequences out of 15000+600000
  469723 words of font info for 42 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,11n,77p,1221b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ZAky.xdv (3 pages, 85132 bytes).
+Output written on ZAky.xdv (3 pages, 85972 bytes).
